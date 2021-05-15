@@ -36,6 +36,14 @@ admin_email - Your Email, Required to access Dashboard
 You can deploy UpStats on Vercel 
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/project?template=https://github.com/Upstats/UpStats)
+
+## Demo
+![Dashboard](https://raw.githubusercontent.com/Upstats/UpStats/master/screenshot/homepage.png)
+<div align="center">UpStats Homepage</div>
+
+![Dashboard](https://raw.githubusercontent.com/Upstats/UpStats/master/screenshot/dashboard.png)
+<div align="center">UpStats Admin Panel</div>
+
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
