@@ -165,7 +165,7 @@ export default function Home({ status, systems, config }) {
               <span className="sr-only">UpStats</span>
             </a>
             <p className="text-sm text-center text-gray-600 md:text-left">
-              © 2020 <a href="#">UP Stats</a>
+              © 2021 <a href="#">UP Stats</a>
             </p>
           </div>
         </footer>
