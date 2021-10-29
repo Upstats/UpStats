@@ -14,7 +14,7 @@
     "@emotion/styled": "^11.3.0",
     "@fontsource/poppins": "^4.2.2",
     "apisauce": "^2.1.1",
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "bcrypt": "^5.0.1",
     "formik": "^2.2.6",
     "framer-motion": "^4.1.11",
