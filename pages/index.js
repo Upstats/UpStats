@@ -84,6 +84,7 @@ export default function Home({ status, systems, config }) {
                 w="90%"
                 p={3}
                 bg="white"
+                key={system._id}
               >
                 <Text pl={3}>{system.name}</Text>
                 <Spacer />
@@ -134,31 +135,6 @@ export default function Home({ status, systems, config }) {
           ""
         )}
         <footer className="px-4 py-16 mx-auto max-w-7xl">
-          <nav className="grid grid-cols-2 gap-12 mb-12 md:grid-cols-3 lg:grid-cols-5">
-            <div>
-              <p className="mb-4 text-sm font-medium text-primary">
-                Handy Links
-              </p>
-              <a
-                className="flex mb-3 text-sm font-medium text-gray-700 transition md:mb-2 hover:text-primary"
-                href="https://github.com/ToolsHD/UPStats"
-              >
-                Opensource
-              </a>
-              <a
-                className="flex mb-3 text-sm font-medium text-gray-700 transition md:mb-2 hover:text-primary"
-                href="#"
-              >
-                Features
-              </a>
-              <a
-                className="flex mb-3 text-sm font-medium text-gray-700 transition md:mb-2 hover:text-primary"
-                href="#"
-              >
-                Pricing
-              </a>
-            </div>
-          </nav>
           <div className="flex flex-col items-center justify-between md:flex-row">
             <a href="/" className="mb-4 md:mb-0">
               <img id="footer-img" src="assets/img/footer.jpg" />
@@ -226,9 +202,13 @@ export async function getStaticProps(context) {
       notFound: true,
     };
   }
-
+  let data = JSON.stringify({
+    status: status,
+    systems: systems,
+    config: config,
+  });
   return {
-    props: { status: status, systems: systems, config: config },
+    props: JSON.parse(data),
     revalidate: 1,
   };
 }

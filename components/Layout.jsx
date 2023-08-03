@@ -47,11 +47,11 @@ const Layout = (props) => {
                 <div className="nav_list">
                   <div className="nav_items">
                     <h3 className="nav_mainmenu">Dashboard</h3>
-                    <a href="/dashboard" className="nav_link active">
+                    <a href="/admin" className="nav_link active">
                       <i className="bx bx-home nav_icon" />
                       <span className="nav_name">Manage Status</span>
                     </a>
-                    <a href="/dashboard/manage-admins" className="nav_link">
+                    <a href="/admin/manage-admins" className="nav_link">
                       <i className="bx bx-user nav_icon" />
                       <span className="nav_name">Manage Admins</span>
                     </a>

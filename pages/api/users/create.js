@@ -13,7 +13,7 @@ export default async (req, res) => {
       let user = await User.findOne({ email: req.body.email.toLowerCase() });
       if (user && user.password)
         return res.status(400).send("User already registered.");
-
+      else user = new User(_.pick(req.body, ["name", "email", "password"]));
       user.password = req.body.password;
       user.name = req.body.name;
 
